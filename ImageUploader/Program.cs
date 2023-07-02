@@ -78,7 +78,7 @@ app.MapGet("/", (HttpContext context) =>
     <form name=""imageForm""  method=""post"" enctype=""multipart/form-data"">
 
         <label for=""imagetitle""> Title of the image:</label>
-        <input type=""text"" id=""title"" name=""title"" required><br><br>
+        <input type=""text"" id=""title"" name=""title"" ><br><br>
 
         <label for=""imagefile""> Select an image file (JPEG, PNG, GIF):</label>
         <input type=""file"" id=""imagefile"" name=""imagefile"" accept="".JPEG, .jpg, .png, .gif"" required><br><br>
