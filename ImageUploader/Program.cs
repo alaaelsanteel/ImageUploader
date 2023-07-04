@@ -144,10 +144,7 @@ app.MapGet("/picture/{id}", async(string id , HttpContext context) =>
     var jsonPath = Path.Combine(Directory.GetCurrentDirectory(), "imageData.json");
    
     var allLines = await File.ReadAllLinesAsync(jsonPath);
-
-  
-
-
+    
     var allImages = new List<Image>();
     
     foreach (var line in allLines)
